@@ -4,7 +4,8 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "lint": "standard --fix"
   },
   "dependencies": {
     "expo": "~40.0.0",
@@ -12,7 +13,14 @@
     "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0"
+    "@babel/core": "^7.9.0",
+    "husky": "^6.0.0",
+    "standard": "^16.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
   },
   "private": true
 }
