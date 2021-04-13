@@ -1,8 +1,8 @@
 {
   "expo": {
     "name": "TechMarketPlace",
-    "slug": "TechMarketPlace",
-    "version": "1.0.0",
+    "slug": "tech-market-place",
+    "version": "0.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -17,9 +17,10 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false
     },
     "android": {
+      "supportsTablet": false,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"

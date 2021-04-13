@@ -5,7 +5,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "eject": "expo eject",
-    "lint": "standard --fix"
+    "test": "standard --fix"
   },
   "dependencies": {
     "expo": "~40.0.0",
@@ -19,7 +19,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint"
+      "pre-commit": "yarn run test"
     }
   },
   "private": true
